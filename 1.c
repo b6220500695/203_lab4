@@ -16,12 +16,17 @@ int main()
       }
    }
    int mn = 0 ;
-   int n ;
       for(int z=0;z<=1;z++){
             for(int j=i;j<len[z];++j){
                int cn = 0;
-               int k ;
                for(int k=0;k<4;++k){
                int si = j-i+1;
-               bool found = false;
+                  bool found = false;
+                     for(int cu=0;cu<len[k]-si+1;++cu){
+                           bool ffound = true;
+                           for(int x=0;x<si;++x){
+                           if(str[k][cu+x] != str[z][i+x]){
+                                ffound = false;
+                                break;
+
 
