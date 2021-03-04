@@ -1,5 +1,8 @@
-#include <stdio.h>
+#include <iostream>
+#include <unordered_map>
+using namespace std;
 const int N = 55;
+set<string> s[N];
 char str[10][55];
 int len[10];
 int main(){
@@ -23,19 +26,18 @@ int main(){
                   int si = j-i+1;
                   bool found = false;
                      for(int cu=0;cu<len[k]-si+1;++cu){
-                         bool ffound = true;
+                          bool ffound = true;
                            for(int x=0;x<si;++x){
                            if(str[k][cu+x] != str[z][i+x]){
                               ffound = false;
                               break;}
                               }
                         if(ffound){
-                          found = true;
+                           found = true;
                            break;
                         }
                      }
-                   if(found)
-                 {
+                     if(found){
                      cn++;
                      }
                     if(cn >= 3){
@@ -44,13 +46,15 @@ int main(){
                for(int x=i;x<=j;++x){
                   st += str[z][x];
                }
-             s[si].insert(st);
+               s[si].insert(st);
                break;
                }
             }
-         printf ()
-  return 0; }
+         }
       }
-
+   }
+cout << *s[mx].begin();
+return 0;
+}
 
 
