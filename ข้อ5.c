@@ -8,21 +8,31 @@ int main(void){
    for(a=0;a<m;a++){
    gets(i);
    int j[3]={1,2,3};
-for(b=0;x[b]!='\0';b++){
+for(b=0;i[b]!='\0';b++){
   if(i[b]=='A'){
      x=j[1];
       j[1]=j[0];
       j[0]=x;
   }
-  if(i[b]=='B')
+  if(i[b]=='B'){
    x =j[2];
   j[2]=j[1];
   j[1]=x;
-}}
+}
+if(i[b]=='C'){
+   x =j[0];
+  j[0]=j[2];
+  j[2]=x;
+}
+}
 for(c=0;c<3;c++){
-if(j[c]==1){
-   g[a]=c+1;
+   if(j[c]==1){
+  g[a]=c+1;
 }
 }
+}
+}
+for(d=0;d<m;d++){
+ printf("%d\n",g[d]);
 }
 }
