@@ -14,10 +14,10 @@ int main()
       {
          continue;
       }
-   }
    else if (n[x]!=n[x+1])
    {
-      printf("%c",n[x);
+      printf("%c",n[x]);
+   }
    }
    return 0;
 }
