@@ -10,7 +10,7 @@ int main()
 
    for(x=0;x<y;x++)
    {
-      if(n[x]!=n[x+1])
+      if(n[x]==n[x+1])
       {
          continue;
       }
