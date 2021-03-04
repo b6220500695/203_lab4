@@ -15,4 +15,13 @@ int main()
             str[i][j] = tolower(str[i][j]);
       }
    }
+   int mn = 0 ;
+   int n ;
+      for(int z=0;z<=1;z++){
+            for(int j=i;j<len[z];++j){
+               int cn = 0;
+               int k ;
+               for(int k=0;k<4;++k){
+               int si = j-i+1;
+               bool found = false;
 
